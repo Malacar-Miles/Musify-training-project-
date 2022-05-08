@@ -1,0 +1,29 @@
+/* Accessories section */
+
+#accessories {
+  width: 1470px;
+  margin: 0 auto 123px auto;
+}
+
+#accessories h2 {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 79px;
+  letter-spacing: 0.04em;
+}
+
+.accessories-container {
+  width: 100%;
+  margin: 143px 0 123px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.accessories-container img {
+  border-radius: 26px;
+  margin-top: 30px;
+  cursor: pointer;
+}

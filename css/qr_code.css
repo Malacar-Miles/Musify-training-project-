@@ -1,0 +1,42 @@
+/* QR Code section */
+
+#qr-code {
+  width: 1476px;
+  height: 510px;
+  margin: 0 auto 97px auto;
+  padding: 0 151px 0 126px;
+  background: linear-gradient(91.42deg, #370665 0%, #35589A 100%);
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#qr-code h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+
+#qr-code span {
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.03em;
+}
+
+.store-logo-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-logo-wrapper a {
+  margin-left: 21px;
+}

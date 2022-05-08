@@ -1,0 +1,140 @@
+/* Implementation of Light/Dark themes, filters and buttons */
+
+:root {
+  --page-width: 1728px;
+  --page-height: 1250px;
+  --highlight-color: #F14A16;
+  --price-color: #FC9918;
+  --purple-background-color: #370665;
+  --description-height: 0; /* Sets zero height for all <div class=hidden-description> elements in their default state */
+  --make-image-white: invert(100%) sepia(76%) saturate(19%) hue-rotate(49deg) brightness(104%) contrast(101%);
+  --make-image-orange: invert(40%) sepia(94%) saturate(3673%) hue-rotate(354deg) brightness(97%) contrast(94%);
+}
+
+.theme-dark {
+  --text-color: #FFFFFF;
+  --background-color: #070606;
+  --grey-text-color: #A4A4A4;
+  --mode-button-color: #370665;
+  --mode-button-filter: none;
+  --show-blur: block; /* Sets "display: block" for blur effects */
+  --button-solid-filter: drop-shadow(0px 0px 21px #F14A16);
+  --button-hollow-filter: drop-shadow(0px 0px 18px #F14A16);
+  --trends-background: linear-gradient(163.76deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 100.82%);
+}
+
+.theme-dark .icon {
+  filter: var(--make-image-white);
+}
+
+.theme-light {
+  --text-color: #000000;
+  --background-color: #FAFAFA;
+  --grey-text-color: #282828;
+  --mode-button-color: #FFFFFF;
+  --mode-button-filter: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  --show-blur: none; /* Sets "display: none" for blur effects */
+  --button-solid-filter: drop-shadow(2px 4px 18px rgba(241, 74, 22, 0.25));
+  --button-hollow-filter: drop-shadow(2px 4px 12px rgba(241, 74, 22, 0.25));
+  --trends-background: #282828;
+}
+
+.theme-light .icon {
+  filter: none;
+}
+
+.icon {
+  transition-property: filter;
+  transition-duration: 0.7s;
+}
+
+#blur1 {
+  display: var(--show-blur);
+  position: absolute;
+  z-index: -1;
+  width: 904px;
+  height: 904px;
+  left: -99px;
+  top: 310px;
+  background: #35589A;
+  filter: blur(500px);
+}
+
+#blur2 {
+  display: var(--show-blur);
+  position: absolute;
+  z-index: -1;
+  width: 954px;
+  height: 954px;
+  left: 873px;
+  top: -315px;
+  background: var(--purple-background-color);
+  filter: blur(600px);
+}
+
+#fade {
+  position: absolute;
+  z-index: -2;
+  width: 733px;
+  height: 74px;
+  left: 997px;
+  top: 1065px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, var(--background-color) 100%);
+}
+
+button {
+  font-family: "Proxima Nova", sans-serif;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  transition: 0.2s;
+}
+
+.cart-button-icon {
+  margin-right: 0.3em;
+  filter: var(--make-image-orange);
+}
+
+button:hover img.cart-button-icon {
+  filter: var(--make-image-white);
+}
+
+.scrollable-container {
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+.scrollable-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: "Proxima Nova", sans-serif;
+  transition-property: color, background-color;
+  transition-duration: 0.7s;
+}
+
+@media only screen and (max-device-width: 480px){
+  body {
+    width: var(--page-width); /* Prevents issues on mobile devices */
+  }
+}
+
+section {
+  scroll-margin-top: 159px; /* Accounds for the fixed header size when navigating towards a section */
+}

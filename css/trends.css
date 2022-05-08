@@ -1,0 +1,102 @@
+/* Trends section */
+
+#trends {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--background-color);
+  transition: inherit;
+}
+
+.trends-wrapper {
+  width: var(--page-width);
+  margin: 0 auto;
+  padding-bottom: 147px;
+}
+
+#trends h2 {
+  margin: 0;
+  padding-top: 117px;
+  padding-bottom: 103px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+
+.product-container-trends {
+  margin-left: 129px;
+  width: 2376px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-trends {
+  overflow: hidden;
+  width: 376px;
+  background: var(--trends-background);
+  box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.25);
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  padding-bottom: 26px;
+  color: #FFFFFF;
+}
+
+.product-trends h3 {
+  margin-left: 22px;
+  margin-top: 17px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+
+.product-trends li {
+  margin-left: 22px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+
+.product-trends .price {
+  margin-left: 22px;
+  margin-top: 14px;
+  margin-bottom: 19px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+
+.trends-button {
+  width: 150px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--highlight-color);
+  border: 2px solid var(--highlight-color);
+  border-radius: 20px;
+  filter: var(--button-hollow-filter);
+}
+
+.trends-button:hover {
+  color: white;
+  background-color: var(--highlight-color);
+  filter: var(--button-solid-filter);
+}
+
+.product-trends button.cart {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.product-trends button img {
+  width: 22.79px;
+  height: 21.09px;
+  margin-right: 7.21px;
+}

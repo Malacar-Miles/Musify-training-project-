@@ -1,0 +1,116 @@
+/* Exclusive Offer section */
+
+#offer {
+  width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 193px;
+}
+
+.offer-image {
+  position: relative;
+}
+
+.discount-text {
+  position: absolute;
+  top: 18px;
+  left: 43px;
+  width: 166px;
+  height: 166px;
+  border-radius: 83px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: var(--purple-background-color);
+  box-shadow: 8px 10px 17px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.02em;
+}
+
+.offer-text {
+  width: 475px;
+  height: 591px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer-text h2 {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 79px;
+  letter-spacing: 0.04em;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.02em;
+}
+
+#countdown-header {
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.countdown-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.countdown-digits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-family: ui-monospace;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  letter-spacing: 0.05em;
+  background-color: var(--purple-background-color);
+  border-radius: 32px;
+}
+
+.offer-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-offer {
+  width: 225px;
+  height: 75px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  border-radius: 20px;
+  color: var(--highlight-color);
+  border: 3px solid var(--highlight-color);
+  filter: var(--button-hollow-filter);
+}
+
+.button-offer:hover {
+  font-weight: 700;
+  color: white;
+  background-color: var(--highlight-color);
+  filter: var(--button-solid-filter);
+}

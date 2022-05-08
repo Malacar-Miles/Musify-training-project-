@@ -1,0 +1,42 @@
+/* Benefits section */
+
+#why-buy {
+  width: 1476px;
+  padding: 30px 54px 56px 56px;
+  margin: 0 auto 171px auto;
+  color: #FFFFFF;
+  background: linear-gradient(91.42deg, #370665 0%, #35589A 100%);
+  border-radius: 25px;
+}
+
+#why-buy h2 {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.benefit {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+}
+
+.why-buy-benefits {
+  margin-top: 31px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+}
+
+.benefit img {
+  margin-right: 20px;
+}

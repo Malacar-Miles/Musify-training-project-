@@ -1,0 +1,96 @@
+/* New Arrivals section */
+
+#new-arrivals {
+  width: var(--page-width);
+  margin: 0 auto;
+  padding-bottom: 189px;
+}
+
+#new-arrivals h2 {
+  margin: 0;
+  margin-bottom: 103px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+
+.product-container-new {
+  margin-left: 126px;
+  width: 2342px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-new {
+  overflow: hidden;
+  width: 501px;
+  background: var(--purple-background-color);
+  border: 5px solid #35589A;
+  border-radius: 50px;
+  padding-bottom: 35px;
+  color: #FFFFFF;
+}
+
+.product-new h3 {
+  margin-left: 29px;
+  margin-top: 21px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+
+.product-new li {
+  margin-left: 29px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+
+.product-new .price {
+  margin-left: 29px;
+  margin-top: 17px;
+  margin-bottom: 23px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+
+.product-new .article-button-wrapper {
+  padding: 0 29px;
+}
+
+.new-button {
+  width: 200px;
+  height: 63px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: var(--highlight-color);
+  border: 3px solid var(--highlight-color);
+  border-radius: 20px;
+  filter: var(--button-hollow-filter);
+}
+
+.new-button:hover {
+  color: white;
+  background-color: var(--highlight-color);
+  filter: var(--button-solid-filter);
+}
+
+.product-new button.cart {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.product-new button img {
+  width: 22.79px;
+  height: 21.09px;
+  margin-right: 7.21px;
+}

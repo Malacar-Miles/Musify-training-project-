@@ -1,0 +1,147 @@
+/* Contacts section */
+
+#contacts {
+  background-color: var(--purple-background-color);
+  width: 100%;
+}
+
+#contacts a, contacts a:visited {
+  color:white;
+  text-decoration: none;
+}
+
+#contacts h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+#contacts p {
+  margin: 0;
+}
+
+.contacts-wrapper {
+  width: var(--page-width);
+  margin: 0 auto;
+  padding: 112px 0 19px 0;
+  color: white;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  display: grid;
+  grid-template-columns: 411px 261px 1fr 563px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "logo shop support about"
+    "subscribe subscribe subscribe about"
+    "copyright copyright copyright copyright";
+}
+
+/* Apply white borders to all grid areas for debugging
+#contacts > * {
+  border: 1px solid white;
+}
+*/
+
+.contacts-logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-shop {
+  grid-area: shop;
+}
+
+.contacts-support {
+  grid-area: support;
+}
+
+.contacts-right-column {
+  grid-area: about;
+}
+
+.contacts-subscribe {
+  grid-area: subscribe;
+  padding-left: 61px;
+  padding-top: 77px;
+}
+
+.contacts-copyright {
+  grid-area: copyright;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 85px;
+}
+
+.contacts-copyright span {
+  font-weight: 700;
+}
+
+.contacts-country {
+  margin-top: 66px;
+  font-weight: 700;
+}
+
+.contacts-contacts, .contacts-manufactured {
+  margin-top: 22px;
+}
+
+.contacts-social {
+  margin-top: 37px;
+}
+
+.contacts-social a {
+  margin-right: 32px;
+}
+
+.contacts-subscribe h3 {
+  line-height: 46px;
+}
+
+.subscribe-input-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+#input-email {
+  width: 423px;
+  height: 54px;
+  border: 2px solid var(--highlight-color);
+  background-color: var(--purple-background-color);
+  border-radius: 20px;
+  padding: 0 19px;
+  font-size: 26px;
+  line-height: 46px;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
+#input-email:placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Proxima Nova';
+}
+
+#subscribe-button {
+  width: 246px;
+  height: 64px;
+  filter: none;
+  margin-left: 27px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: var(--highlight-color);
+  border: 3px solid var(--highlight-color);
+  border-radius: 20px;
+}
+
+#subscribe-button:hover {
+  color: white;
+  background-color: var(--highlight-color);
+}
